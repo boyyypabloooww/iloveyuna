@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ganti nama file di bawah dengan foto bareng kalian */
+    background-image: url('foto-bareng.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.pink-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 182, 193, 0.65);
+    z-index: -1;
+}
+
+/* Glassmorphism Design */
+.glass-card {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(255, 105, 180, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.form-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    color: #c2185b;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: #c2185b;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 0.95rem;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff4081, #c2185b);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.message {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.error {
+    color: #d32f2f;
+    animation: shake 0.4s ease-in-out;
+}
+
+.success {
+    color: #2e7d32;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Floating Animations */
+#love-panel {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+}
+
+#floating-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-text {
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    color: #c2185b;
+    font-weight: bold;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float-left {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-50vw); }
+}
+
+@keyframes float-right {
+    0% { transform: translateX(-50vw); }
+    100% { transform: translateX(100vw); }
+}

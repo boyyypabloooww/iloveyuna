@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pink-overlay"></div>
+
+    <!-- Panel Form -->
+    <div id="form-panel" class="glass-card">
+        <h1 class="form-title">Halo Sayang 💕</h1>
+        <p class="form-subtitle">Isi ini dulu yaa...</p>
+        
+        <div class="input-group">
+            <label>Nama Kamu</label>
+            <input type="text" id="user-name" placeholder="Ketik nama kamu...">
+        </div>
+
+        <div class="input-group">
+            <label>Nama Pacar</label>
+            <input type="text" id="partner-name" placeholder="Masukan nama pacar kamu...">
+        </div>
+
+        <div class="input-group">
+            <label>Tanggal Jadian</label>
+            <input type="date" id="anniv-date">
+        </div>
+
+        <p id="error-msg" class="message error hidden">KAMU GA SAYANG AKU YA? 🥺</p>
+        <p id="success-msg" class="message success hidden">YAYYY KAMU INGET! 😍</p>
+
+        <button id="submit-btn" class="btn-primary">Kirim 💌</button>
+    </div>
+
+    <!-- Panel Animasi Cinta -->
+    <div id="love-panel" class="hidden">
+        <div id="floating-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
